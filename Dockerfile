@@ -1,6 +1,6 @@
-FROM ubuntu:20.04
-# Gallium: v16 and lts
-# bullseye: Debian Stable
+FROM ubuntu:24.04
+# jod: v22 and lts
+# bookworm: Debian Stable
 
 LABEL com.bitwarden.product="bitwarden"
 
@@ -13,7 +13,7 @@ ENV BITWARDENCLI_CONNECTOR_PLAINTEXT_SECRETS=true
 WORKDIR /app
 ENV PATH="/app:${PATH}"
 
-ARG BWDC_VERSION=2.9.10
+ARG BWDC_VERSION=2025.1.0
 ENV BWDC_VERSION=${BWDC_VERSION}
 
 RUN apt-get update \

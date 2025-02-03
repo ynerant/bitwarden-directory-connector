@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-BWDC_VERSION=2.9.10
-export BUILD_TAG=bitwarden/directory-connector:${BWDC_VERSION}-containerise_v3.0.1
+BWDC_VERSION=2025.1.0
+export BUILD_TAG=bitwarden/directory-connector:${BWDC_VERSION}-containerise_v3.0.2
 
 
 DOCKER_BUILDKIT=1 docker build --progress=plain . --label com.bitwarden.product="bitwarden" --build-arg BWDC_VERSION -t ${BUILD_TAG} --rm #--no-cache # --squash --pull

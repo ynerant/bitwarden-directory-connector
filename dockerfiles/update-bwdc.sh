@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BWDC_VERSION=2.9.10
+BWDC_VERSION=2025.1.0
 
 echo "Work in progress, not executable yet! Exiting..."
 exit
